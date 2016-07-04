@@ -27,4 +27,11 @@ describe Character do
 			end
 		end
 	end
+	describe ".armor_class" do
+		context "no armor class assigned" do
+			it "defaults to 10" do
+				expect(wolverine.armor_class()).to eq(10)
+			end
+		end
+	end
 end
