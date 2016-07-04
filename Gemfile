@@ -7,3 +7,7 @@ group :development do
 	gem 'guard'
 	gem 'guard-rspec'
 end
+
+group :development, :test do
+	gem 'fuubar'
+end
