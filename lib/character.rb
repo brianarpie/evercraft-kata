@@ -1,10 +1,14 @@
 require 'attributes/alignment'
 
 class Character
-	attr_accessor :name, :hp
+	attr_accessor :name, :hp, :armor_class
 
 	def hp
 		@hp || 5
+	end
+
+	def armor_class
+		@armor_class || 10
 	end
 
 	def alignment=(alignment)
