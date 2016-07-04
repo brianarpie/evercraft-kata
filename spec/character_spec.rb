@@ -1,5 +1,6 @@
 require 'spec_helper'
 require 'character'
+require 'attributes/alignment'
 
 describe Character do
 	wolverine = Character.new
@@ -11,4 +12,12 @@ describe Character do
 			end
 		end
 	end	
+	describe ".alignment" do
+		context "given an alignment argument is set" do
+			wolverine.alignment = "good"
+			it "returns the character's alignment" do
+				expect(wolverine.alignment()).to eq("good")
+			end
+		end
+	end
 end
