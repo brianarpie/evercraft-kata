@@ -20,4 +20,10 @@ describe Character do
 			end
 		end
 	end
+	describe ".hp" do
+		context "no hit points assigned"
+			it "defaults to 5" do
+				expect(wolverine.hp).to eq(5)
+			end
+		end
 end
